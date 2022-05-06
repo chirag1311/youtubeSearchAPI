@@ -35,6 +35,9 @@ small {
 
 .form {
   display: grid;
+  margin: 0 auto;
+  max-width: 60%;
+  justify-content: center;
 }
 
 .label {
@@ -122,6 +125,10 @@ small {
 }
 
 @media (min-width: 500px) and (max-width: 720px) {
+  .form {
+    max-width: 75%;
+  }
+
   .card--image {
     max-height: 150px;
     max-width: 270px;
@@ -133,6 +140,7 @@ small {
     grid-template-columns: 1fr auto;
     grid-gap: 1rem;
     align-items: center;
+    max-width: 75%;
   }
 
   .input {

@@ -69,7 +69,7 @@ export default function InputKeyword() {
           className="input"
           type="text"
           name="keyword"
-          placeholder="i.e. Jurassic Park"
+          placeholder="Search"
           value={keyword}
           onChange={(e) => setKeyword(e.target.value)}
         />
