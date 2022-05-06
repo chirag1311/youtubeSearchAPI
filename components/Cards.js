@@ -29,7 +29,7 @@ export default function Cards({
           {videos
             .filter((video) => video.id.kind === "youtube#video")
             .map((video, index) => (
-              <SearchCards video={video} index={index} />
+              <SearchCards key={index} video={video} index={index} />
             ))}
         </div>
       </InfiniteScroll>
