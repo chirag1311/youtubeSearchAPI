@@ -14,7 +14,7 @@ export default function InputKeyword() {
 
   const search = async (e) => {
     e.preventDefault();
-    console.log("res.data.items: ");
+    // console.log("res.data.items: ");
     try {
       const res = await youtubeApi.get("/search", {
         params: {
@@ -22,7 +22,7 @@ export default function InputKeyword() {
         }
       });
 
-      console.log(res.data.items);
+      //console.log(res.data.items);
       setVideoData(res.data.items);
       setNextPage(res.data.nextPageToken);
       setDataLength(res.data.pageInfo.resultsPerPage);
@@ -51,10 +51,10 @@ export default function InputKeyword() {
         setDataLength((prevLen) => {
           return prevLen + res.data.items.length;
         });
-        console.log(dataLength);
+        //console.log(dataLength);
         setNextPage(res.data.nextPageToken);
       } catch (err) {
-        console.error(`catch error: ${err}`);
+        console.error(err);
       }
     } else {
       setHasMore((prevState) => !prevState);
