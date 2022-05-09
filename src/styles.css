@@ -104,10 +104,6 @@ small {
   object-fit: cover;
 }
 
-.card--content {
-  max-height: 100px;
-}
-
 .card * {
   margin: 0;
 }
@@ -173,9 +169,5 @@ small {
     align-self: flex-start;
     max-height: 180px;
     max-width: 320px;
-  }
-
-  .card--content {
-    max-height: 180px;
   }
 }
