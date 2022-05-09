@@ -22,7 +22,9 @@ export default function SearchBar() {
 
     //API is called only if there is a keyword input
     if (keyword.length > 0) {
-      console.log("search api called");
+      console.log(
+        "search api called - if error - kindly add Google API key in ../api/youtube"
+      );
       try {
         const res = await youtubeApi.get("/search", {
           params: {
