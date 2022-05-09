@@ -24,7 +24,7 @@ small {
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1000px;
   padding: 40px;
 }
 
@@ -97,17 +97,32 @@ small {
 .card--image {
   align-self: center;
   border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   max-height: 100px;
   max-width: 240px;
   object-fit: cover;
 }
 
+.card--content {
+  max-height: 100px;
+}
+
+.card * {
+  margin: 0;
+}
 .card--title {
   font-size: 1.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card--publishDate {
+  margin-bottom: 0.5rem;
 }
 
 .card--desc {
+  margin-top: 1rem;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -158,5 +173,9 @@ small {
     align-self: flex-start;
     max-height: 180px;
     max-width: 320px;
+  }
+
+  .card--content {
+    max-height: 180px;
   }
 }

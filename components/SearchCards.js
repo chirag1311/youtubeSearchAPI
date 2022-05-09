@@ -12,7 +12,7 @@ export default function SearchCards({ video, index }) {
         />
         <div className="card--content">
           <h3 className="card--title">{video.snippet.title}</h3>
-          <p>
+          <p className="card--publishDate">
             <small>
               RELEASE DATE: {video.snippet.publishedAt.slice(0, 10)}
             </small>
