@@ -1,4 +1,5 @@
 import React from "react";
+import "../src/styles.css";
 
 export default function SearchCards({ video, index }) {
   return (

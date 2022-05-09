@@ -1,14 +1,13 @@
 import "./styles.css";
 
 import React from "react";
-import InputKeyword from "../components/InputKeyword";
+import SearchBar from "../components/SearchBar";
 
 export default function App() {
   return (
     <div className="container">
-      {/* <img className="logo" src = "" alt="Youtube Logo"/> */}
       <h1 className="title">Youtube Search</h1>
-      <InputKeyword />
+      <SearchBar />
     </div>
   );
 }
